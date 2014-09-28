@@ -1,0 +1,160 @@
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #eaeaea;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+div, article, nav, h1, h2, h3, h4, h5, h6, p, a, img { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* start of custom css */
+body,html { font-family: "Helvetica";margin:0 !important; margin-top: -5px	!important;}
+.wrapper {display:block; min-width:1024px; overflow:hidden;}
+
+/* use comments everywhere!!! Typography CSS */
+h1 { font-size: 1.2em; font-family: sans-serif; font-weight: 300;}
+h2 { font-size: 1em; font-family: sans-serif; font-weight: 300;}
+h3 { font-size: .8em; font-family: sans-serif; font-weight: 200;}
+ul {list-style-type: none;}
+
+/* HTML structure */
+.side a {display:block; padding: 30px; text-decoration: none; color: white;}
+.side {background-color: #393a39; width: 200px; height: 2000px; float: left;}
+
+ul .active a {color: #393a39; background-color: white;}
+.side a:hover {color: #393a39; background-color: white;}
+
+.header {padding-bottom: 15px;}
+
+.main {float: left; padding: 25px; width:60%;}
+.main a {color: #393a39; text-decoration: none;}
+.main a:hover {color: #f05a28;}
+.main ul{list-style-type: none;}
+.main ul li{display:inline; padding-right: 2em;}
+
+
+
+/* Table */
+table { margin-top: 20px; }
+th, td { text-align: center; border-bottom: 1px solid #ccc; }
+td { color: #408bca; padding: 20px; }
+th { font-size: 12px; padding: 5px 20px; border-left: 1px solid #ccc; font-weight: normal;}
+
+.icon { display: inline-block; background: transparent center center no-repeat; width: 18px; height: 18px; }
+.issue { background-image: url("images/issue.png"); }
+.fixed { background-image: url("images/fixed.png"); }
+.flag { background-image: url("images/flag.png"); }
+.good { background-image: url("images/good.png"); }
+.openflag { background-image: url("images/openflag.png"); }
+
+
+/* Dashboard */
+.dashboard h1{padding: 20px;}
+.metadescriptions {width: 100%; background-color: #f5f5f5; float:left;}
+.pagedepth {width: 100%; background-color: white; float:left;}
+.headings {width: 100%; background-color: #e8e8e8; float:left;}
+.externallinks {width: 100%; background-color: white; float:left;}
+.internallinks {width: 100%; background-color: #e8e8e8; float:left;}
+.http {width: 100%; background-color: white; float:left;}
+.stats ul li {background-color: #e8e8e8; padding: 20px; margin: 5px; float:left; text-align: center;}
+.stats ul li h1 {color: #408bca;}
+
+/*audit */ 
+.main-inner { width: 1000px; overflow: hidden; }
+.main .page { width: 700px; float: left; }
+.main .page img { max-width: 700px; }
+.main .audit { width: 300px; float: right; }
+
+
+.audit .input { display: inline-block; width: 200px; border-bottom: 1px solid #ccc; height: 18px; line-height: 18px; font-size: 12px; color: #777; margin-bottom: 25px; }
+.audit .input label { display: inline-block; background: #fff; height: 19px; line-height: 18px; }
+.audit .input span { padding-left: 15px; color: #000;  border-bottom: 1px solid #ccc; position: relative; top: 1px; }
+
+.rate {display: inline-block; width: 200px; border-bottom: 1px solid #ccc; height: 18px; line-height: 18px; font-size: 12px; color: #777; margin-bottom: 15px;}
+.section {margin-bottom: 25px;}
+

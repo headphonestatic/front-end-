@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Content Kit</title>
+		<meta charset="utf-8">
+		<title>D3.chart Boilerplate Example</title>		
+		
+		<script src="lib/d3.min.js"></script>
+		<script src="lib/c3.js"></script>
+        <link href="css/switchery.css" rel="stylesheet" type="text/css">
+		<link href="css/c3.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" media="all" rel="stylesheet" type="text/css">
+	</head>
+	
+<STYLE TYPE="text/javascript">
+		
+		$("button").click(function(){
+  $("p").toggleClass("main");
+});
+	</style> 
+	<body>
+	
+	<div class="wrapper">
+
+<div class="side"> 
+        <div class="header">
+             <h1> <a href="projects.html"> <b> Content Kit </b> </a></h1>
+        </div>
+
+        <div class="subhead">
+            <h2>
+            <ul> 
+              <li><a href="sites.html">Sites </a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="summary.html">Summary</a></li>
+              <li class="active"><a href="audit.html">Audit</a></li>
+              <li><a href="templates.html">Templates</a></li>
+            </ul>
+            </h2>
+        </div>
+</div>        
+
+
+<div class="main"> 
+	<h1> AUDIT </h1> 
+	
+	<div class="main-inner">
+		<div class="page"> 
+		<img src="images/acad.png"> 
+		</div>
+		
+		<div class="audit">
+		<div class="section"> 
+		
+			<div class="input">
+				<label>Page Id</label><span contenteditable="true"></span>
+			</div>
+			<div class="input">
+				<label>Page Type</label><span contenteditable="true"></span>
+			</div>
+			
+				<div class="input">
+				<label>Topics</label><span contenteditable="true"></span>
+			</div>
+			
+			
+		</div> 
+		
+		<div class="section"> 
+		
+			<div class="rate"> Voice & Style </div> 
+			
+				<div class="input">
+				<label>Notes</label><span contenteditable="true"></span>
+			</div>
+			
+		</div>	
+			
+		<div class="section"> 
+		
+				<div class="rate"> Tone Rating 
+					
+					
+					
+					
+				</div> 
+				
+				<div class="input">
+				<label>Notes</label><span contenteditable="true"></span>
+			</div>
+			
+		</div>
+		
+		<div class="section"> 
+			
+			<div class="input">
+				<label>General Notes</label><span contenteditable="true"></span>
+			</div>
+			
+			<div class="input">
+				<label>Section Notes</label><span contenteditable="true"></span>
+			</div>
+			
+		</div>
+			
+		</div>
+		
+	</div>		
+
+
+</div>
+
+		<script src="lib/jquery.min.js"></script>
+		<script src="Widget.js"></script>
+		<script src="renderers/BarChart.js"></script>
+		<script src="renderers/PieChart.js"></script>
+        <script src="lib/switchery.js"></script>
+		<script src="example.js"></script>		
+		
+	</div><!--.wrapper close-->
+	</body>
+</html>

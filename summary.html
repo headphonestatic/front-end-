@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Content Kit</title>
+		<meta charset="utf-8">
+		<title>D3.chart Boilerplate Example</title>		
+		
+		<script src="lib/jquery.min.js"></script>
+		<link href="styles.css" media="all" rel="stylesheet" type="text/css">
+	
+	
+	
+	
+<script= "text/javascript">
+	$(document).ready(function(){
+  //use event delegation
+  $(document).on('click','#imageid',function(){
+
+    var $this= $(this);
+    $('#toggle').toggle('slide',function(){
+      //swap src of the image on toggle is completed
+      var imgsrc = $this.attr('src');
+      $this.attr('src',$this.data('othersource'));
+      $this.data('othersource',imgsrc);
+   });
+  });
+});
+
+</script> 
+	
+	</head>
+	
+	
+
+	
+	<body>
+	
+	<div class="wrapper">
+
+<div class="side"> 
+        <div class="header">
+             <h1> <a href="projects.html"> <b> Content Kit </b> </a></h1>
+        </div>
+        
+
+
+        <div class="subhead">
+            <h2>
+            <ul> 
+              <li><a href="sites.html">Sites </a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li class="active"><a href="summary.html">Summary</a></li>
+              <li><a href="audit.html">Audit</a></li>
+              <li><a href="templates.html">Templates</a></li>
+            </ul>
+            </h2>
+        </div>
+</div>        
+
+
+<div class="main"> 
+	<h1> SUMMARY </h1> 
+	
+	<img src="http://www.webtutorialsource.com/images/showhidetogglemenu/arrowleft.png" id="imageid" data-othersource="http://www.webtutorialsource.com/images/showhidetogglemenu/arrowright.png" />
+<div id="toggle"> </div>
+	  <br>
+	<h2> <a href="..."> Filter By > </a></h2>
+		  <br>
+	<ul> 
+		<li><a href="summary.html"><b>Main Summary</b> </a></li>
+		<li><a href="summary2.html">Secondary Summary</a></li>
+		<li><a href="summary3.html">Responsive Summary </a></li>
+	</ul>
+	
+	<div class="content"> 
+		<div class="sort">
+		
+		
+		<table class="table" style="width:100%">
+		  <tr>
+		    <th>Depth</th>
+		    <th>Title/URL</th>		
+		    <th>Heading</th>
+			<th>Meta Descriptions</th>
+			<th># Links Internal</th>
+			<th># Links External</th>
+			<th>Audit</th>
+		  </tr>
+		  <tr> 
+		    <td>1</td> 
+		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>		
+		    <td><div class='icon issue'></div></td>
+		     <td><div class='icon good'></div></td>
+		    <td>37</td>
+		    <td>3</td>
+		     <td><div class='icon flag'></div></td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>	
+		     <td><div class='icon fixed'></div></td>	
+		      <td><div class='icon issue'></div></td>
+		    <td>37</td>
+		    <td>3</td>
+		       <td><div class='icon flag'></div></td>	
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>		
+		     <td><div class='icon issue'></div></td>
+		    <td><div class='icon good'></div></td>
+		    <td>37</td>
+		    <td>3</td>
+		   <td><div class='icon openflag'></div></td>
+		  </tr>
+		</table>
+		
+				
+		
+		</div>
+	</div>
+	
+
+
+</div>
+
+		<script src="lib/jquery.min.js"></script>
+		<script src="Widget.js"></script>
+		<script src="renderers/BarChart.js"></script>
+		<script src="renderers/PieChart.js"></script>
+        <script src="lib/switchery.js"></script>
+		<script src="example.js"></script>		
+		
+	</div><!--.wrapper close-->
+	</body>
+</html>

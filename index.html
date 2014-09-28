@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Content Move</title>
+		<meta charset="utf-8">
+		<title>D3.chart Boilerplate Example</title>		
+		
+		<script src="lib/d3.min.js"></script>
+		<script src="lib/c3.js"></script>
+        <link href="css/switchery.css" rel="stylesheet" type="text/css">
+		<link href="css/c3.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" media="all" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	
+	<div class="wrapper">
+
+<div class="side"> 
+        <div class="header">
+             <h1> <a href="..."> <b> Content Mover </b> </a></h1>
+        </div>
+
+        <div class="subhead">
+            <h2>
+            <ul> 
+              <li><a href="sites.html">Sites </a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li class="active"><a href="summary.html">Summary</a></li>
+              <li><a href="audit.html">Audit</a></li>
+              <li><a href="templates.html">Templates</a></li>
+            </ul>
+            </h2>
+        </div>
+</div>        
+
+
+<div class="main"> 
+	<h1> SUMMARY </h1> 
+	<h2> <a href="..."> Filter By > </a></h2>
+	
+	<ul> 
+		<li><a href="..."><b>Main Summary</b> </a></li>
+		<li><a href="...">Secondary Summary</a></li>
+		<li><a href="...">Responsive Summary </a></li>
+	</ul>
+	
+	<div class="content"> 
+		<div class="sort">
+		
+		
+		<table class="table" style="width:100%">
+		  <tr> <h1>
+		    <th>Depth</th>
+		    <th>Title/URL</th>		
+		    <th>Heading</th>
+			<th>Meta Descriptions</th>
+			<th># Links Internal</th>
+			<th># Links External</th>
+			<th>Audit</th>
+		  </h1>
+		  </tr>
+		  <tr> 
+		    <td>1</td> 
+		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>		
+		    <td><img src="images/issue.png"></td>
+		    <td><img src="images/good.png"></td>
+		    <td>37</td>
+		    <td>3</td>
+		    <td><img src="images/flag.png"></td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>		
+		    <td><img src="images/fixed.png"></td>
+		    <td><img src="images/issue.png"></td>
+		    <td>37</td>
+		    <td>3</td>
+		    <td><img src="images/flag.png"></td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>		
+		    <td><img src="images/issue.png"></td>
+		    <td><img src="images/good.png"></td>
+		    <td>37</td>
+		    <td>3</td>
+		    <td><img src="images/openflag.png"></td>
+		  </tr>
+		</table>
+		
+				
+		
+		</div>
+	</div>
+	
+
+
+</div>
+
+		<div class="widget-holder"> </div>
+			
+		<script src="lib/jquery.min.js"></script>
+		<script src="Widget.js"></script>
+		<script src="renderers/BarChart.js"></script>
+		<script src="renderers/PieChart.js"></script>
+        <script src="lib/switchery.js"></script>
+		<script src="example.js"></script>		
+		
+	</div><!--.wrapper close-->
+	</body>
+</html>
