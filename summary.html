@@ -8,25 +8,27 @@
 		<script src="lib/jquery.min.js"></script>
 		<link href="styles.css" media="all" rel="stylesheet" type="text/css">
 	
-	
-	
-	
-<script= "text/javascript">
-	$(document).ready(function(){
-  //use event delegation
-  $(document).on('click','#imageid',function(){
 
-    var $this= $(this);
-    $('#toggle').toggle('slide',function(){
-      //swap src of the image on toggle is completed
-      var imgsrc = $this.attr('src');
-      $this.attr('src',$this.data('othersource'));
-      $this.data('othersource',imgsrc);
-   });
-  });
-});
+        <!-- you had a typo with the script tag which made it totally break -->
+        <script type="text/javascript">
 
-</script> 
+            // once the whole page is loaded and ready to go,
+            $(document).ready(function(){
+                
+                // tell the .flag and .openflag class elements to start listening for clicks
+                $(document).on('click','.flag, .openflag',function(){
+                    
+                    // and when the click happens,
+                    var $audit = $(this);
+
+                    // toggle their classes
+                    // so it will lose the one it had and gain the one it lacked
+                    $audit.toggleClass('openflag');
+                    $audit.toggleClass('flag');
+                });
+            });
+
+        </script> 
 	
 	</head>
 	
@@ -61,7 +63,6 @@
 <div class="main"> 
 	<h1> SUMMARY </h1> 
 	
-	<img src="http://www.webtutorialsource.com/images/showhidetogglemenu/arrowleft.png" id="imageid" data-othersource="http://www.webtutorialsource.com/images/showhidetogglemenu/arrowright.png" />
 <div id="toggle"> </div>
 	  <br>
 	<h2> <a href="..."> Filter By > </a></h2>

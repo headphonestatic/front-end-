@@ -125,7 +125,7 @@ th, td { text-align: center; border-bottom: 1px solid #ccc; }
 td { color: #408bca; padding: 20px; }
 th { font-size: 12px; padding: 5px 20px; border-left: 1px solid #ccc; font-weight: normal;}
 
-.icon { display: inline-block; background: transparent center center no-repeat; width: 18px; height: 18px; }
+.icon { display: inline-block; background: transparent center center no-repeat; width: 18px; height: 18px; cursor: pointer; }
 .issue { background-image: url("images/issue.png"); }
 .fixed { background-image: url("images/fixed.png"); }
 .flag { background-image: url("images/flag.png"); }
