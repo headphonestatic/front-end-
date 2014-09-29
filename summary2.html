@@ -5,11 +5,22 @@
 		<meta charset="utf-8">
 		<title>D3.chart Boilerplate Example</title>		
 		
-		<script src="lib/d3.min.js"></script>
-		<script src="lib/c3.js"></script>
-        <link href="css/switchery.css" rel="stylesheet" type="text/css">
-		<link href="css/c3.css" rel="stylesheet" type="text/css">
+		<script src="lib/jquery.min.js"></script>
 		<link href="styles.css" media="all" rel="stylesheet" type="text/css">
+	
+
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(document).on('click','.flag, .openflag',function(){
+                    var $audit = $(this);
+                    $audit.toggleClass('openflag');
+                    $audit.toggleClass('flag');
+                });
+            });
+
+        </script> 
+	
 	</head>
 	<body>
 	
@@ -65,7 +76,7 @@
 		  </tr>
 		  <tr> 
 		    <td>1</td> 
-		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>		
+		    <td><h1> ACAD | Welcome <h1> <br> <a href="..."> http://www.acad.ca </a></td>			
 		    <td><div class='icon issue'></div></td>
 			<td>EN</td>		    
 			<td>200</td>
@@ -76,7 +87,7 @@
 		  </tr>
 		  <tr>
 		    <td>1</td>
-		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>	
+		    <td><h1> ACAD | Welcome <h1> <br> <a href="..."> http://www.acad.ca </a></td>		
 		     <td><div class='icon fixed'></div></td>	
 		       <td>EN</td>
 		    <td>200</td>
@@ -87,7 +98,7 @@
 		  </tr>
 		  <tr>
 		    <td>1</td>
-		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>		
+		    <td><h1> ACAD | Welcome <h1> <br> <a href="..."> http://www.acad.ca </a></td>		
 		     <td><div class='icon issue'></div></td>
 		    <td>EN</td>
 		    <td>200</td>

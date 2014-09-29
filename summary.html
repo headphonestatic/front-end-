@@ -9,20 +9,11 @@
 		<link href="styles.css" media="all" rel="stylesheet" type="text/css">
 	
 
-        <!-- you had a typo with the script tag which made it totally break -->
+
         <script type="text/javascript">
-
-            // once the whole page is loaded and ready to go,
             $(document).ready(function(){
-                
-                // tell the .flag and .openflag class elements to start listening for clicks
                 $(document).on('click','.flag, .openflag',function(){
-                    
-                    // and when the click happens,
                     var $audit = $(this);
-
-                    // toggle their classes
-                    // so it will lose the one it had and gain the one it lacked
                     $audit.toggleClass('openflag');
                     $audit.toggleClass('flag');
                 });
@@ -89,7 +80,7 @@
 		  </tr>
 		  <tr> 
 		    <td>1</td> 
-		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>		
+		    <td><h1> ACAD | Welcome <h1> <br> <a href="..."> http://www.acad.ca </a></td>		
 		    <td><div class='icon issue'></div></td>
 		     <td><div class='icon good'></div></td>
 		    <td>37</td>
@@ -98,7 +89,7 @@
 		  </tr>
 		  <tr>
 		    <td>1</td>
-		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>	
+		    <td><h1> ACAD | Welcome <h1> <br> <a href="..."> http://www.acad.ca </a></td>		
 		     <td><div class='icon fixed'></div></td>	
 		      <td><div class='icon issue'></div></td>
 		    <td>37</td>
@@ -107,7 +98,7 @@
 		  </tr>
 		  <tr>
 		    <td>1</td>
-		    <td><b> ACAD | Welcome </b> <br> http://www.acad.ca</td>		
+		    <td><h1> ACAD | Welcome <h1> <br> <a href="..."> http://www.acad.ca </a></td>			
 		     <td><div class='icon issue'></div></td>
 		    <td><div class='icon good'></div></td>
 		    <td>37</td>
