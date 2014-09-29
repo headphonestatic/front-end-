@@ -7,11 +7,24 @@
 		<script src="lib/jquery.min.js"></script>
 		<link href="styles.css" media="all" rel="stylesheet" type="text/css">
 		
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script type="text/javascript" src="lib/jquery.easypiechart.js"></script>
+		<script type="text/javascript" src="lib/jquery.easypiechart.min.js"></script>
 		<link rel="stylesheet"type="text/css" href="lib/jquery.easypiechart.css">
-		<script src="lib/easypiechart.min.js"></script>
-		
+		<script type="text/javascript">
+
+            $(document).ready(function(){
+                var chart = $('span.chart').easyPieChart({
+                    easing: 'easeOutElastic',
+                    delay: 3000,
+                    barColor: "#0a0",
+                    trackColor: "#eee",
+                    scaleColor: false,
+                    onStep: function(from, to, percent) {
+                        this.el.children[0].innerHTML = Math.round(percent);
+                    }
+                });
+            });
+
+        </script>
 		
 	
 
@@ -47,142 +60,63 @@
 	<br>
 	
 	<div class="dashboard"> 
-		
-			
-<div class="metadescriptions"> 
-			<h1> META DESCRIPTIONS </h1> 
-			
-			<! chart !> 			
-			<div class="chart">			
-			<span id="metaChart" class="chart" data-percent="46"> 
-			</span> 	<h1> 46% </h1>
-						<script>
-				document.addEventListener('DOMContentLoaded', function() {
-					var chart = window.chart = new EasyPieChart(document.querySelector('#metaChart'), {
-						easing: 'easeOutElastic',
-						delay: 3000,
-						onStep: function(from, to, percent) {
-							this.el.children[0].innerHTML = Math.round(percent);
-							}
-							});
-								});</script>	
-								</div>
-
-					
-									</div>
-		
-<div class="pagedepth"> 
-			<h1> PAGE DEPTH </h1>
-			
-			<! chart !> 			
-			<div class="chart">			
-			<span id="depthChart" class="chart" data-percent="96"> 
-			</span> 	<h1> 96% </h1>
-						<script>
-				document.addEventListener('DOMContentLoaded', function() {
-					var chart = window.chart = new EasyPieChart(document.querySelector('#depthChart'), {
-						easing: 'easeOutElastic',
-						delay: 3000,
-						onStep: function(from, to, percent) {
-							this.el.children[0].innerHTML = Math.round(percent);
-							}
-							});
-								});</script>	
-								</div>
-			
-			
-			
-			
-								</div>
-		
-<div class="headings"> 
-			<h1> TOTAL HEADINGS </h1>
-			<! chart !> 			
-			<div class="chart">			
-			<span id="headChart" class="chart" data-percent="50"> 
-			</span> 	<h1> 50% </h1>
-						<script>
-				document.addEventListener('DOMContentLoaded', function() {
-					var chart = window.chart = new EasyPieChart(document.querySelector('#headChart'), {
-						easing: 'easeOutElastic',
-						delay: 3000,
-						onStep: function(from, to, percent) {
-							this.el.children[0].innerHTML = Math.round(percent);
-							}
-							});
-								});</script>	
-								</div>			
-			
-			
-			
-								</div>
-		
-<div class="externallinks"> 
-			<h1> EXTERNAL LINKS  </h1>
-			<! chart !> 			
-			<div class="chart">			
-			<span id="linksChart" class="chart" data-percent="5"> 
-			</span> 	<h1> 5% </h1>
-						<script>
-				document.addEventListener('DOMContentLoaded', function() {
-					var chart = window.chart = new EasyPieChart(document.querySelector('#linksChart'), {
-						easing: 'easeOutElastic',
-						delay: 3000,
-						onStep: function(from, to, percent) {
-							this.el.children[0].innerHTML = Math.round(percent);
-							}
-							});
-								});</script>	
-								</div>					
-			
-		</div>
-		
-<div class="internallinks"> 
-			<h1> INTERNAL LINKS  </h1>
-			<! chart !> 			
-			<div class="chart">			
-			<span id="inlinksChart" class="chart" data-percent="23"> 
-			</span> 	<h1> 23% </h1>
-						<script>
-				document.addEventListener('DOMContentLoaded', function() {
-					var chart = window.chart = new EasyPieChart(document.querySelector('#inlinksChart'), {
-						easing: 'easeOutElastic',
-						delay: 3000,
-						onStep: function(from, to, percent) {
-							this.el.children[0].innerHTML = Math.round(percent);
-							}
-							});
-								});</script>	
-								</div>	
-								</div>
-		
-<div class="http"> 
-			<h1> HTTP </h1>
-			<! chart !> 			
-			<div class="chart">			
-			<span id="httpChart" class="chart" data-percent="16"> 
-			</span> 	<h1> 16% </h1>
-						<script>
-				document.addEventListener('DOMContentLoaded', function() {
-					var chart = window.chart = new EasyPieChart(document.querySelector('#httpChart'), {
-						easing: 'easeOutElastic',
-						delay: 3000,
-						onStep: function(from, to, percent) {
-							this.el.children[0].innerHTML = Math.round(percent);
-							}
-							});
-								});</script>	
-								</div>	
-								</div>
-
-		
-		
-		
+        <div class="metadescriptions"> 
+            <h1> META DESCRIPTIONS </h1> 
+            
+            <div class="chart">			
+                <span id="metaChart" class="chart" data-percent="46"> 
+                </span>
+                <h1> 46% </h1>
+            </div>
+        </div>
+            
+        <div class="pagedepth"> 
+            <h1> PAGE DEPTH </h1>
+            
+            <div class="chart">			
+                <span id="depthChart" class="chart" data-percent="96"> 
+                </span>
+                <h1> 96% </h1>
+            </div>
+        </div>
+            
+        <div class="headings"> 
+            <h1> TOTAL HEADINGS </h1>
+            <div class="chart">			
+                <span id="headChart" class="chart" data-percent="50"> 
+                </span>
+                <h1> 50% </h1>
+            </div>
+        </div>
+            
+        <div class="externallinks"> 
+            <h1> EXTERNAL LINKS  </h1>
+            <div class="chart">			
+                <span id="linksChart" class="chart" data-percent="5"> 
+                </span>
+                <h1> 5% </h1>
+            </div>					
+        </div>
+            
+        <div class="internallinks"> 
+            <h1> INTERNAL LINKS  </h1>
+            <div class="chart">			
+                <span id="inlinksChart" class="chart" data-percent="23"> 
+                </span>
+                <h1> 23% </h1>
+            </div>	
+        </div>
+            
+        <div class="http"> 
+            <h1> HTTP </h1>
+            <div class="chart">			
+                <span id="httpChart" class="chart" data-percent="16"> 
+                </span>
+                <h1> 16% </h1>
+            </div>	
+        </div>
 	</div>
-
 </div>
-		<script src="lib/jquery.min.js"></script>
-
 			
 		
 	</div><!--.wrapper close-->
