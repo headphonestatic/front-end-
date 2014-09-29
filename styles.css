@@ -23,7 +23,7 @@ time, mark, audio, video {
     vertical-align:baseline;
     background:transparent;
 }
-body {
+body { font-family: 'Noto Sans', sans-serif; font-weight: 400;
     line-height:1;
 }
 article,aside,details,figcaption,figure,
@@ -33,6 +33,7 @@ footer,header,hgroup,menu,nav,section {
 nav ul {
     list-style:none;
 }
+
 blockquote, q {
     quotes:none;
 }
@@ -93,13 +94,13 @@ div, article, nav, h1, h2, h3, h4, h5, h6, p, a, img {
 
 
 /* start of custom css */
-body,html { font-family: "Helvetica";margin:0 !important; margin-top: -5px	!important;}
+body,html { font-family: 'Noto Sans', sans-serif; font-size: 15px;}
 .wrapper {display:block; min-width:1024px; overflow:hidden;}
 
 /* use comments everywhere!!! Typography CSS */
-h1 { font-size: 1.2em; font-family: sans-serif; font-weight: 300;}
-h2 { font-size:  1em; font-family: sans-serif; font-weight: 300;}
-h3 { font-size: .8em; font-family: sans-serif; font-weight: 200;}
+h1 { font-size: 1.2em; font-family: 'Noto Sans', sans-serif; font-weight: 400;}
+h2 { font-size:  1em; font-family: 'Noto Sans', sans-serif; font-weight: 400;}
+h3 { font-size: .8em; font-family: 'Noto Sans', sans-serif; font-weight: 400;}
 ul {list-style-type: none;}
 
 /* HTML structure */
@@ -117,7 +118,9 @@ ul .active a {color: #393a39; background-color: white;}
 
 
 /* Table */
-table { margin-top: 20px; }
+table { margin-top: 20px;}
+.content {margin: 30px 40px 40px 40px; }
+.toggle {margin: 30px 40px 40px 40px; }
 th, td { text-align: center; border-bottom: 1px solid #efefef; }
 td { color:grey; padding: 12px; font-size: 14px;}
 th { font-size: 12px; padding-bottom:  5px; font-weight: normal;}
@@ -132,14 +135,15 @@ table h1 { font-size: 13px; line-height: .8; color: black; font-weight: 400;}
 
 
 /* Dashboard */
+.header h1 {font-family: 'Noto Sans', sans-serif; font-weight: 700; font-size: 30px;}
 .dashboard {float: left; text-align: center;}
 .dashboard h1{padding: 20px; font-size: 13px;}
-.metadescriptions {float:left; padding: 40px; }
-.pagedepth {float:left;  padding: 40px;}
-.headings { float:left; padding: 40px;}
-.externallinks {float:left; padding: 40px;}
-.internallinks {float:left; padding: 40px;}
-.http {float:left; padding: 40px;}
+.metadescriptions {float:left; padding: 30px 40px 40px 40px; }
+.pagedepth {float:left;  padding: 30px 40px 40px 40px;}
+.headings { float:left; padding: 30px 40px 40px 40px;}
+.externallinks {float:left; padding: 30px 40px 40px 40px;}
+.internallinks {float:left; padding: 30px 40px 40px 40px;}
+.http {float:left; padding: 30px 40px 40px 40px;}
 
 
 /*audit */ 
