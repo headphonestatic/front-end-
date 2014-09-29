@@ -111,7 +111,7 @@ ul .active a {color: #393a39; background-color: white;}
 .header {padding-bottom: 15px;}
 .main {float: left; padding: 25px; width:60%;}
 .main a {color: #393a39; text-decoration: none;}
-.main a:hover {color: #f05a28;}
+.main a:hover {color: #4ea7cf;}
 .main ul{list-style-type: none;}
 .main ul li{display:inline; padding-right: 2em;}
 
@@ -132,7 +132,9 @@ table h1 { font-size: 13px; line-height: .8; color: black; font-weight: 400;}
 .flag { background-image: url("images/flag.png"); }
 .good { background-image: url("images/good.png"); }
 .openflag { background-image: url("images/openflag.png"); }
-
+.filter {float:right; background-color: #69d0ff; margin-bottom: 30px; padding: 10px; border-radius: 3px; }
+.filter a{color: #ebeaea; }
+.filter a:hover{color: #fff;  }
 
 /* Dashboard */
 .header h1 {font-family: 'Noto Sans', sans-serif; font-weight: 700; font-size: 30px;}
